@@ -23,7 +23,7 @@ def print_items(html):
                 print("\n#%s" % category[child])
                 for k in category[child.replace("child", "childList")]:
                     print(k["title"], end=" ")
-    print("\n")
+    print()
 
 if __name__ == "__main__":
     print_items(get_html())
